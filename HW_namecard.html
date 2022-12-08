@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: '微軟正黑體';
+      }
+      .card-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .card-text {
+        font-size: 12px;
+      }
+      .card-subtitle:nth-of-type(2) {
+        letter-spacing: 5px;
+      }
+
+      .container,
+      .card,
+      .row {
+        height: 100%;
+      }
+
+      .card .row .first {
+        height: 45%;
+      }
+
+      .card .row .second {
+        height: 55%;
+      }
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        object-position: 10% 25%;
+      }
+
+      @media (min-width: 768px) {
+        .container,
+        .card {
+          height: 80%;
+        }
+        .card {
+          width: 90%;
+          margin: auto;
+        }
+        .card .row .first {
+          height: 100%;
+        }
+        .card .row .second {
+          height: 100%;
+        }
+        .card-img-top {
+          height: 100%;
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+        .second {
+          padding-top: 100px;
+        }
+        .card-subtitle:nth-of-type(2) {
+          letter-spacing: 10px;
+        }
+      } ;
+    </style>
+  </head>
+  <body class="d-flex justify-content-center align-items-center vw-100 vh-100">
+    <div class="container">
+      <div class="card">
+        <div class="row">
+          <div class="first col-12 col-md-4">
+            <img src="./logo.png" class="card-img-top" />
+          </div>
+          <div class="second col-12 ps-5 col-md-8">
+            <div class="card-body pt-5">
+              <p class="card-subtitle">Front-end Designer</p>
+              <h1 class="card-title pb-1">Yung Chien</h1>
+              <p class="card-subtitle pb-5">人生有限公司</p>
+
+              <p class="card-text pb-3">
+                地址：105台北市松山區光復南路33巷12號<br />
+                電話：02-2634-5523<br />
+                E-mail：cloris222@gmail.com<br />
+                網站：https://getbootstrap.com/<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
